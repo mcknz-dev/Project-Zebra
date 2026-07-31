@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div style="max-width:900px; margin:50px auto;">
+
+    <h1>🦓 Project Zebra</h1>
+
+    <p>
+        Welcome to your receipt dashboard.
+    </p>
+
+    <hr>
+
+    <h2>Your Receipt Email</h2>
+
+    <p>
+        receipt+demo@inbox.project-zebra.online
+    </p>
+
+    <button>
+        Copy
+    </button>
+
+    <hr>
+
+    <h2>Receipts</h2>
+
+    <p>
+        No receipts yet.
+    </p>
+
+  <form action="/upload" method="post" enctype="multipart/form-data">
+
+    <input
+    type="file"
+    name="receipt"
+    accept=".pdf,image/*"
+    required>
+
+    <br><br>
+
+    <button>
+        Upload Receipt
+    </button>
+
+</form>
+
+</div>
+
+{% endblock %}
