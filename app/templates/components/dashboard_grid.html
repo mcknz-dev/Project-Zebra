@@ -1,14 +1,18 @@
 <section class="dashboard-grid">
 
-    <div class="dashboard-card">
+    <!-- ========================= -->
+    <!--      Recent Receipts      -->
+    <!-- ========================= -->
+
+    <section class="dashboard-card receipts-card">
 
         <div class="card-header">
 
             <h2>Recent Receipts</h2>
 
             <a href="/receipts" class="button-link">
-    View All
-</a>
+                View All
+            </a>
 
         </div>
 
@@ -16,54 +20,140 @@
 
             <div class="receipt-list">
 
-            {% for receipt in receipts %}
+                {% for receipt in receipts %}
 
-                {% include "components/receipt_row.html" %}
+                    {% include "components/receipt_row.html" %}
 
-            {% endfor %}
+                {% endfor %}
 
             </div>
 
         {% else %}
 
-            <p>No receipts yet.</p>
+            <div class="empty-state">
+
+                <h3>No receipts yet</h3>
+
+                <p>Upload your first receipt to get started.</p>
+
+            </div>
 
         {% endif %}
 
-    </div>
+    </section>
 
-    <div class="dashboard-card">
+    <!-- ========================= -->
+    <!--        Sidebar Info       -->
+    <!-- ========================= -->
 
-        <div class="card-header">
+    <aside class="dashboard-sidebar">
 
-            <h2>Quick Actions</h2>
+        <!-- Alerts -->
 
-        </div>
+        <section class="dashboard-card">
 
-        <p><strong>Your Receipt Inbox</strong></p>
+            <div class="card-header">
 
-        <p>
-            receipt+demo@inbox.project-zebra.online
-        </p>
+                <h2>Alerts</h2>
 
-        <br>
+            </div>
 
-        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="alerts-list">
 
-            <input
-                type="file"
-                name="receipt"
-                accept=".pdf,image/*"
-                required>
+                <div class="alert success">
 
-            <br><br>
+                    ✔ OCR completed successfully
 
-            <button>
-                Upload Receipt
-            </button>
+                </div>
 
-        </form>
+                <div class="alert warning">
 
-    </div>
+                    ⚠ 3 receipts need review
+
+                </div>
+
+                <div class="alert">
+
+                    Inbox connected
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Activity -->
+
+        <section class="dashboard-card activity-card">
+
+            <div class="card-header">
+
+                <h2>Recent Activity</h2>
+
+            </div>
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+
+                    <div class="activity-dot"></div>
+
+                    <div>
+
+                        <strong>Receipt uploaded</strong>
+
+                        <p>Walmart • 2 minutes ago</p>
+
+                    </div>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <div class="activity-dot"></div>
+
+                    <div>
+
+                        <strong>OCR completed</strong>
+
+                        <p>Receipt processed successfully</p>
+
+                    </div>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <div class="activity-dot"></div>
+
+                    <div>
+
+                        <strong>Merchant renamed</strong>
+
+                        <p>Unknown → Walmart</p>
+
+                    </div>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <div class="activity-dot"></div>
+
+                    <div>
+
+                        <strong>Email imported</strong>
+
+                        <p>Receipt received automatically</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </aside>
 
 </section>

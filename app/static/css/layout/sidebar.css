@@ -11,13 +11,15 @@
     width: 210px;
     min-width: 210px;
 
-    height: calc(100vh - var(--topbar-height));
-
     padding: 18px 14px;
 
-    background: var(--color-surface);
+    background: #fff;
 
-    border-right: 1px solid var(--color-border);
+    border: 1px solid #ececec;
+
+    border-radius: 24px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,.04);
 
 }
 
@@ -301,5 +303,51 @@
     padding-top: 18px;
 
     border-top: 1px solid var(--color-border);
+
+}
+
+/* ========================= */
+/*        Branding           */
+/* ========================= */
+
+.sidebar-brand {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 8px 0 22px;
+    margin-bottom: 20px;
+
+}
+
+.brand-logo {
+
+    font-size: 30px;
+    line-height: 1;
+
+}
+.brand-text {
+
+    font-family: "Orbitron", sans-serif;
+
+    font-size: 26px;
+    font-weight: 700;
+
+    letter-spacing: .03em;
+
+    color: #202020;
+
+}
+
+.sidebar-divider {
+
+    height: 1px;
+
+    margin-bottom: 18px;
+
+    background: var(--color-border);
 
 }

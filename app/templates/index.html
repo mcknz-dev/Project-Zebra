@@ -9,27 +9,28 @@
 
 <div class="dashboard">
 
-    <!-- Top Navigation -->
-    {% include "components/topbar.html" %}
+
 
     <!-- Main Dashboard Layout -->
     <div class="content">
 
-        <!-- Left Navigation -->
-        {% include "components/sidebar.html" %}
+    {% include "components/sidebar.html" %}
 
-        <!-- Main Content Area -->
+    <div class="workspace">
+
+        {% include "components/topbar.html" %}
+
         <main class="main-content">
 
-            <!-- Summary Cards -->
-            {% include "components/cards.html" %}
+            {% include "components/financial_overview.html" %}
 
-            <!-- Dashboard Content -->
             {% include "components/dashboard_grid.html" %}
 
         </main>
 
     </div>
+
+</div>
 
 </div>
 

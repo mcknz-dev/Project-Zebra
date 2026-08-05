@@ -3,46 +3,45 @@
 {% block content %}
 
 <!-- ========================= -->
-<!--         Receipt           -->
+<!--      Expense Details      -->
 <!-- ========================= -->
 
 <div class="dashboard">
 
-    <!-- Top Navigation -->
-    {% include "components/topbar.html" %}
-
-    <!-- Main Dashboard Layout -->
     <div class="content">
 
-        <!-- Left Navigation -->
+        <!-- Sidebar -->
         {% include "components/sidebar.html" %}
 
-        <!-- Main Content Area -->
-        <main class="main-content">
+        <div class="workspace">
 
-            <!-- Navigation -->
+            <!-- Top Toolbar -->
+            {% include "components/topbar.html" %}
 
-            <div class="back-links">
+            <!-- Page Content -->
+            <main class="main-content">
 
-                <a href="/" class="back-link">
-                    ← Home
-                </a>
+                <!-- Navigation -->
 
-                <a href="/receipts" class="back-link">
-                    ← Expenses
-                </a>
+                <div class="back-links">
 
-            </div>
+                    <a href="/" class="back-link">
+                        ← Dashboard
+                    </a>
 
-            <!-- Page Header -->
+                    <a href="/receipts" class="back-link">
+                        ← Expenses
+                    </a>
 
+                </div>
 
+                <!-- Expense Details -->
 
-            <!-- Expense Workspace -->
+                {% include "components/expense_details.html" %}
 
-            {% include "components/expense_details.html" %}
+            </main>
 
-        </main>
+        </div>
 
     </div>
 

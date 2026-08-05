@@ -1,0 +1,199 @@
+/* ==========================================
+   Financial Overview
+========================================== */
+
+.financial-overview {
+
+    background: #fff;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 24px;
+
+    padding: 22px 26px;
+
+}
+
+/* ========================= */
+/* Header                    */
+/* ========================= */
+
+.overview-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+
+}
+
+.overview-header h2 {
+
+    margin: 0;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: -.02em;
+
+}
+
+.overview-period {
+
+    font-size: 14px;
+
+    color: #8c8c8c;
+
+}
+
+/* ========================= */
+/* Grid                      */
+/* ========================= */
+
+.overview-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+/* ========================= */
+/* Item                      */
+/* ========================= */
+
+.overview-item {
+
+    padding: 0 22px;
+
+    border-right: 1px solid #efefef;
+
+}
+
+.overview-item:first-child {
+
+    padding-left: 0;
+
+}
+
+.overview-item:last-child {
+
+    padding-right: 0;
+
+    border-right: none;
+
+}
+
+/* ========================= */
+/* Typography                */
+/* ========================= */
+
+.overview-label {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #888;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+
+}
+
+.overview-item h3 {
+
+    margin: 0 0 8px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: #666;
+
+}
+
+.overview-value {
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: -.04em;
+
+    margin-bottom: 10px;
+
+}
+
+/* ========================= */
+/* Net                       */
+/* ========================= */
+
+.net-item .overview-value {
+
+    color: #179c52;
+
+}
+
+/* Change this dynamically later */
+
+.net-item.negative .overview-value {
+
+    color: #d94841;
+
+}
+
+/* ========================= */
+/* Trend                     */
+/* ========================= */
+
+.overview-trend {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.overview-trend span {
+
+    color: #888;
+
+    font-weight: 500;
+
+}
+
+.overview-trend.positive {
+
+    color: #1fa75a;
+
+}
+
+.overview-trend.negative {
+
+    color: #d94841;
+
+}
+
+.overview-trend.neutral {
+
+    color: #999;
+
+}
