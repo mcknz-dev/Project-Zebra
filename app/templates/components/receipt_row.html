@@ -1,0 +1,23 @@
+<a href="/receipts/{{ receipt.id }}" class="receipt-row-link">
+
+    <div class="receipt-row">
+
+        <div class="receipt-info">
+
+            <div class="receipt-title">
+                🧾 {{ receipt.merchant }}
+            </div>
+
+            <div class="receipt-subtitle">
+                {{ receipt.created_at.strftime("%b %d, %Y") }}
+            </div>
+
+        </div>
+
+        <div class="receipt-total">
+            {{ receipt.currency }} {{ "%.2f"|format(receipt.total) }}
+        </div>
+
+    </div>
+
+</a>

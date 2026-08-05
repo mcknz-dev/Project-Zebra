@@ -1,10 +1,9 @@
-
 {% extends "base.html" %}
 
 {% block content %}
 
 <!-- ========================= -->
-<!--        Dashboard          -->
+<!--         Receipt           -->
 <!-- ========================= -->
 
 <div class="dashboard">
@@ -21,11 +20,27 @@
         <!-- Main Content Area -->
         <main class="main-content">
 
-            <!-- Summary Cards -->
-            {% include "components/cards.html" %}
+            <!-- Navigation -->
 
-            <!-- Dashboard Content -->
-            {% include "components/dashboard_grid.html" %}
+            <div class="back-links">
+
+                <a href="/" class="back-link">
+                    ← Home
+                </a>
+
+                <a href="/receipts" class="back-link">
+                    ← Expenses
+                </a>
+
+            </div>
+
+            <!-- Page Header -->
+
+
+
+            <!-- Expense Workspace -->
+
+            {% include "components/expense_details.html" %}
 
         </main>
 

@@ -1,0 +1,167 @@
+<div class="expense-layout">
+
+    <!-- Expense Information -->
+
+    <div class="expense-card">
+
+        <div class="expense-card-header">
+
+    <h2>Expense Details</h2>
+
+    <div class="expense-actions">
+
+        <button class="button-link">
+            Edit
+        </button>
+
+        <button class="button-link">
+            Delete
+        </button>
+
+    </div>
+
+</div>
+
+        <div class="expense-field">
+
+            <div class="expense-label">
+                Merchant
+            </div>
+
+            <div class="expense-value">
+                {{ receipt.merchant }}
+            </div>
+
+        </div>
+
+        <div class="expense-field">
+
+            <div class="expense-label">
+                Total
+            </div>
+
+            <div class="expense-value">
+                {{ receipt.currency }} {{ "%.2f"|format(receipt.total) }}
+            </div>
+
+        </div>
+
+        <div class="expense-field">
+
+            <div class="expense-label">
+                Date
+            </div>
+
+            <div class="expense-value">
+                {{ receipt.created_at.strftime("%B %d, %Y") }}
+            </div>
+
+        </div>
+
+        <div class="expense-field">
+
+            <div class="expense-label">
+                Payment Method
+            </div>
+
+            <div class="expense-value">
+                —
+            </div>
+
+        </div>
+
+        <div class="expense-field">
+
+            <div class="expense-label">
+                Category
+            </div>
+
+            <div class="expense-value">
+                —
+            </div>
+
+        </div>
+
+        <div class="expense-field">
+
+            <div class="expense-label">
+                Notes
+            </div>
+
+            <div class="expense-value">
+                —
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- Receipt Preview -->
+
+<div class="expense-card">
+
+   <div class="expense-card-header">
+
+    <h2>Receipt Preview</h2>
+
+    <div class="expense-actions">
+
+        <button class="button-link">
+            Replace
+        </button>
+
+        <button class="button-link">
+            Download
+        </button>
+
+    </div>
+
+</div>
+
+    <label
+        for="receipt-upload"
+        class="attachment-placeholder"
+    >
+
+        <div id="receipt-placeholder">
+
+            <div class="attachment-icon">
+                📄
+            </div>
+
+            <h3 id="receipt-title">
+                No receipt attached
+            </h3>
+
+            <p>
+                Drag & drop a receipt here
+            </p>
+
+            <p>
+                or
+            </p>
+
+            <span class="button-link">
+                Browse Files
+            </span>
+
+        </div>
+
+        <img
+            id="receipt-preview-image"
+            class="receipt-preview-image"
+            hidden
+            alt="Receipt Preview"
+        >
+
+    </label>
+
+    <input
+        id="receipt-upload"
+        type="file"
+        accept="image/*,.pdf"
+        hidden
+    >
+
+</div>
+    </div>

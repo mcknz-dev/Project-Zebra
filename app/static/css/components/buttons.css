@@ -1,0 +1,66 @@
+/* ==========================================
+   Buttons
+   Components
+   Project Zebra
+========================================== */
+
+/* ========================= */
+/*       Base Button         */
+/* ========================= */
+
+button {
+
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+
+    background: var(--color-surface);
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all .2s ease;
+
+}
+
+button:hover {
+
+    background: #f2f2f2;
+
+}
+
+/* ========================= */
+/*       Button Link         */
+/* ========================= */
+
+.button-link {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    background: var(--color-surface);
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all .2s ease;
+
+}
+
+.button-link:hover {
+
+    background: #f2f2f2;
+
+}

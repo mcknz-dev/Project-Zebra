@@ -1,0 +1,147 @@
+<aside class="sidebar">
+
+    <nav class="sidebar-main">
+
+        <!-- ========================= -->
+        <!--         Dashboard         -->
+        <!-- ========================= -->
+
+        <a href="/"
+           class="sidebar-home {% if request.url.path == '/' %}active{% endif %}">
+
+            <i data-lucide="house"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- ========================= -->
+        <!--         Financial         -->
+        <!-- ========================= -->
+
+        <section class="sidebar-module">
+
+            <button
+                class="sidebar-section"
+                data-target="financial-menu"
+                type="button"
+                aria-expanded="true">
+
+                <span>Financial</span>
+
+                <i data-lucide="chevron-down"></i>
+
+            </button>
+
+            <nav
+                id="financial-menu"
+                class="sidebar-group">
+
+                <a href="/receipts"
+                   class="{% if request.url.path.startswith('/receipts') %}active{% endif %}">
+
+                    <i data-lucide="receipt"></i>
+
+                    <span>Expenses</span>
+
+                </a>
+
+                <a href="#" class="disabled">
+                    <i data-lucide="file-text"></i>
+                    <span>Invoices</span>
+                </a>
+
+                <a href="#" class="disabled">
+                    <i data-lucide="wallet"></i>
+                    <span>Income</span>
+                </a>
+
+                <a href="#" class="disabled">
+                    <i data-lucide="users"></i>
+                    <span>Clients</span>
+                </a>
+
+                <a href="#" class="disabled">
+                    <i data-lucide="chart-column"></i>
+                    <span>Reports</span>
+                </a>
+
+            </nav>
+
+        </section>
+
+        <!-- ========================= -->
+        <!--         Commerce          -->
+        <!-- ========================= -->
+
+        <section class="sidebar-module">
+
+            <button
+                class="sidebar-section"
+                data-target="commerce-menu"
+                type="button"
+                aria-expanded="true">
+
+                <span>Commerce</span>
+
+                <i data-lucide="chevron-down"></i>
+
+            </button>
+
+            <nav
+                id="commerce-menu"
+                class="sidebar-group">
+
+                <a href="#" class="disabled">
+                    <i data-lucide="package"></i>
+                    <span>Inventory</span>
+                </a>
+
+                <a href="#" class="disabled">
+                    <i data-lucide="boxes"></i>
+                    <span>Products</span>
+                </a>
+
+                <a href="#" class="disabled">
+                    <i data-lucide="shopping-cart"></i>
+                    <span>Orders</span>
+                </a>
+
+                <a href="#" class="disabled">
+                    <i data-lucide="badge-dollar-sign"></i>
+                    <span>Sales</span>
+                </a>
+
+                <a href="#" class="disabled">
+                    <i data-lucide="monitor-smartphone"></i>
+                    <span>Point of Sale</span>
+                </a>
+
+                <a href="#" class="disabled">
+                    <i data-lucide="globe"></i>
+                    <span>Website</span>
+                </a>
+
+            </nav>
+
+        </section>
+
+    </nav>
+
+    <footer class="sidebar-footer">
+
+        <a href="#">
+            <i data-lucide="settings"></i>
+            <span>Settings</span>
+        </a>
+
+        <a href="#">
+            <i data-lucide="circle-help"></i>
+            <span>Help</span>
+        </a>
+
+    </footer>
+
+</aside>

@@ -1,0 +1,102 @@
+/* ==========================================
+   Dashboard
+   Pages
+   Project Zebra
+========================================== */
+
+/* ========================= */
+/*      Summary Grid         */
+/* ========================= */
+
+.summary-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    margin-bottom: 40px;
+
+}
+
+/* ========================= */
+/*     Dashboard Grid        */
+/* ========================= */
+
+.dashboard-grid {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+
+}
+
+/* ========================= */
+/*      Receipt List         */
+/* ========================= */
+
+.receipt-list {
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin-top: 20px;
+
+}
+
+.receipt-row {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 18px;
+
+    background: #fafafa;
+
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+
+    transition: .2s ease;
+
+}
+
+.receipt-row:hover {
+
+    background: #fff;
+
+    border-color: #d5d5d5;
+
+    cursor: pointer;
+
+}
+
+.receipt-info {
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+
+.receipt-title {
+
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.receipt-subtitle {
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+.receipt-total {
+
+    font-size: 16px;
+    font-weight: 600;
+
+}

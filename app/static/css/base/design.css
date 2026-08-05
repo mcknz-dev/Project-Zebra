@@ -1,0 +1,23 @@
+/* ==========================================
+   Design System
+   Base
+   Project Zebra
+========================================== */
+
+:root {
+
+    /* ========================= */
+    /*          Colors           */
+    /* ========================= */
+
+    --color-background: #f5f5f7;
+    --color-surface: #ffffff;
+
+    --color-text: #222222;
+    --color-text-secondary: #666666;
+
+    --color-border: #e5e5e5;
+
+    --color-accent: #444c64;
+
+}

@@ -1,0 +1,305 @@
+/* ==========================================
+   Sidebar
+   Project Zebra
+========================================== */
+
+.sidebar {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 210px;
+    min-width: 210px;
+
+    height: calc(100vh - var(--topbar-height));
+
+    padding: 18px 14px;
+
+    background: var(--color-surface);
+
+    border-right: 1px solid var(--color-border);
+
+}
+
+/* ========================= */
+/*       Main Layout         */
+/* ========================= */
+
+.sidebar-main {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ========================= */
+/*        Dashboard          */
+/* ========================= */
+
+.sidebar-home {
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    height: 46px;
+
+    padding: 0 14px;
+
+    border-radius: 12px;
+
+    color: var(--color-text);
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: .18s ease;
+
+}
+
+.sidebar-home svg {
+
+    width: 20px;
+    height: 20px;
+
+}
+
+.sidebar-home:hover:not(.active) {
+
+    background: #f7f7f7;
+
+}
+
+.sidebar-home.active {
+
+    background: #f4f4f4;
+
+}
+
+/* ========================= */
+/*         Divider           */
+/* ========================= */
+
+.sidebar-divider {
+
+    height: 1px;
+
+    margin: 18px 0 24px;
+
+    background: var(--color-border);
+
+}
+
+/* ========================= */
+/*      Module Layout        */
+/* ========================= */
+
+.sidebar-module {
+
+    margin-bottom: 22px;
+
+}
+
+/* ========================= */
+/*      Module Header        */
+/* ========================= */
+
+.sidebar-section {
+
+    appearance: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 0;
+
+    margin-bottom: 8px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    color: #7b7b7b;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+}
+
+.sidebar-section:hover,
+.sidebar-section:focus,
+.sidebar-section:active {
+
+    background: transparent;
+
+}
+
+.sidebar-section svg {
+
+    width: 16px;
+    height: 16px;
+
+    transition: transform .22s ease;
+
+}
+
+.sidebar-section.collapsed svg {
+
+    transform: rotate(-90deg);
+
+}
+
+/* ========================= */
+/*        Group Nav          */
+/* ========================= */
+
+.sidebar-group {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+
+    overflow: hidden;
+
+    max-height: 500px;
+
+    transition:
+
+        max-height .25s ease,
+
+        opacity .2s ease;
+
+}
+
+.sidebar-group.collapsed {
+
+    max-height: 0;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+}
+
+/* ========================= */
+/*          Links            */
+/* ========================= */
+
+.sidebar-group a,
+.sidebar-footer a {
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    height: 40px;
+
+    padding: 0 12px;
+
+    border-radius: 10px;
+
+    color: #555;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: .18s ease;
+
+}
+
+.sidebar-group a svg,
+.sidebar-footer a svg {
+
+    width: 20px;
+    height: 20px;
+
+    color: #8d8d8d;
+
+}
+
+/* ========================= */
+/*       Active Link         */
+/* ========================= */
+
+.sidebar-group a.active {
+
+    background: #f4f4f4;
+
+    color: var(--color-text);
+
+    font-weight: 600;
+
+}
+
+.sidebar-group a.active svg {
+
+    color: var(--color-text);
+
+}
+
+/* ========================= */
+/*         Hover             */
+/* ========================= */
+
+.sidebar-group a:hover:not(.disabled):not(.active),
+.sidebar-footer a:hover {
+
+    background: #f8f8f8;
+
+    color: var(--color-text);
+
+}
+
+.sidebar-group a:hover:not(.disabled):not(.active) svg,
+.sidebar-footer a:hover svg {
+
+    color: var(--color-text);
+
+}
+
+/* ========================= */
+/*        Disabled           */
+/* ========================= */
+
+.sidebar-group a.disabled {
+
+    opacity: .42;
+
+    pointer-events: none;
+
+}
+
+/* ========================= */
+/*         Footer            */
+/* ========================= */
+
+.sidebar-footer {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+
+    margin-top: auto;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--color-border);
+
+}

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ========================= -->
+<!--        Receipts           -->
+<!-- ========================= -->
+
+<div class="dashboard">
+
+    <!-- Top Navigation -->
+    {% include "components/topbar.html" %}
+
+    <!-- Main Dashboard Layout -->
+    <div class="content">
+
+        <!-- Left Navigation -->
+        {% include "components/sidebar.html" %}
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+
+            <!---------------- Receipts Page --------------->
+
+<div class="page-header">
+
+    <div>
+
+        <h1>Expenses</h1>
+
+        <p>
+            Browse and manage all uploaded receipts.
+        </p>
+
+    </div>
+
+</div>
+          {% if receipts %}
+
+    <div class="receipt-list">
+
+        {% for receipt in receipts %}
+
+            {% include "components/receipt_row.html" %}
+
+        {% endfor %}
+
+    </div>
+
+{% else %}
+
+    <p>No receipts found.</p>
+
+{% endif %}
+
+        </main>
+
+    </div>
+
+</div>
+
+{% endblock %}

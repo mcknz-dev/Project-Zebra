@@ -1,0 +1,71 @@
+/* ==========================================
+   Expense
+   Page
+   Project Zebra
+========================================== */
+
+/* ========================= */
+/*      Expense Fields       */
+/* ========================= */
+
+.expense-field {
+
+    margin-bottom: 24px;
+
+}
+
+.expense-label {
+
+    margin-bottom: 6px;
+
+    color: #8a8a8a;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: .08em;
+
+}
+
+.expense-value {
+
+    color: #1f1f1f;
+
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+/* ========================= */
+/*        Back Links         */
+/* ========================= */
+
+.back-links {
+
+    display: flex;
+
+    gap: 16px;
+
+    margin-bottom: 20px;
+
+}
+
+.back-link {
+
+    color: #666;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: color .2s ease;
+
+}
+
+.back-link:hover {
+
+    color: #111;
+
+}
