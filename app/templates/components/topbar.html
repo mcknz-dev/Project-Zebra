@@ -1,47 +1,26 @@
-<header class="topbar">
+<header class="workspace-header">
 
-    <div class="toolbar-left">
-
-        <div class="welcome">
-
-            <h1 class="welcome-title">
-                Welcome back, Mackenzie.
-            </h1>
-
-            <p class="welcome-subtitle">
-                Here's what's happening today.
-            </p>
-
-        </div>
-
+    <div class="toolbar-pill">
+        {% include "components/toolbars/dashboard_toolbar.html" %}
     </div>
 
-    <div class="toolbar-right">
-
-        <button class="new-button">
-
-            <i data-lucide="plus"></i>
-
-            <span>New</span>
-
-            <i data-lucide="chevron-down"></i>
-
-        </button>
+    <div class="account-pill">
 
         <button class="business-switcher">
-
             <span>Project Zebra</span>
-
             <i data-lucide="chevron-down"></i>
-
         </button>
 
+        <button class="notification-button">
+
+    <i data-lucide="bell"></i>
+
+    <span class="notification-badge"></span>
+
+</button>
+
         <button class="profile-button">
-
-            <div class="avatar">
-                M
-            </div>
-
+            <div class="avatar">M</div>
         </button>
 
     </div>

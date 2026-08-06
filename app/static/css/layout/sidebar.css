@@ -352,3 +352,28 @@
     background: var(--color-border);
 
 }
+
+/* ========================= */
+/*         Logo              */
+/* ========================= */
+
+.sidebar-logo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 12px 26px;
+
+}
+
+.sidebar-logo img {
+
+    display: block;
+
+    width: 160px;
+
+
+    object-fit: contain;
+
+}
