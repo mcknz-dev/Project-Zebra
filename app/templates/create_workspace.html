@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Create your first workspace</h1>
+
+<form method="post" action="/workspace/create">
+
+    <input
+        type="text"
+        name="name"
+        placeholder="Workspace Name"
+        required
+    >
+
+    <button type="submit">
+        Create Workspace
+    </button>
+
+</form>
+
+{% endblock %}
